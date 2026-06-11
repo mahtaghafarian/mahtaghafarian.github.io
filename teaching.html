@@ -8,6 +8,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .dual-banner {
+      width: 100%;
+      height: 220px;
+      display: flex;
+      position: relative;
+      overflow: hidden;
+    }
+    .dual-banner img {
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.68);
+    }
+    .dual-banner .banner-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: "Raleway", sans-serif;
+      font-weight: 300;
+      font-size: 3rem;
+      color: #fff;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.4);
+    }
+  </style>
 </head>
 <body>
 <nav>
@@ -21,8 +49,10 @@
   </ul>
 </nav>
 
-<div class="banner-wrapper">
-  <img src="gamrtheory.jpg" alt="Teaching" class="page-banner" />
+<!-- DUAL BANNER: whiteboard left, thank you letter right -->
+<div class="dual-banner">
+  <img src="gamrtheory.jpg" alt="Game theory lecture" />
+  <img src="thankyouletter.jpg" alt="Thank you letter from students" />
   <span class="banner-title">Teaching</span>
 </div>
 
@@ -35,7 +65,7 @@
     <div class="course-title">Environmental Economics and Policy (ECON 4220)</div>
     <div class="course-meta">Online / Asynchronous &nbsp;·&nbsp; Undergraduate</div>
     <ul class="bullet-list">
-      <li>Maymester 2026. <a href="ECON4220_Syllabus_Maymester2026_UPDATED.pdf" target="_blank">[Syllabus]</a></li>
+      <li>Maymester 2026. &nbsp;<a href="ECON4220_Syllabus_Maymester2026_UPDATED.pdf" target="_blank">[Syllabus]</a></li>
     </ul>
   </div>
 
@@ -43,16 +73,15 @@
     <div class="course-title">Principles of Microeconomics (ECON 2106)</div>
     <div class="course-meta">In Person &nbsp;·&nbsp; Undergraduate</div>
     <ul class="bullet-list">
-      <li>Spring 2026 (118 students). <a href="ECON_2106_Grading_Spring_2026_F2F.pdf" target="_blank">[Syllabus]</a> <a href="Evidence_of_Teaching_Effectiveness_MahtaGhafarianghadim.pdf" target="_blank">[Evaluations]</a></li>
-      <li>Fall 2025 (112 students). <a href="ECON_2106_Grading_Fall_2025_F2F.pdf" target="_blank">[Syllabus]</a> <a href="Evidence_of_Teaching_Effectiveness_MahtaGhafarianghadim.pdf" target="_blank">[Evaluations]</a></li>
+      <li>Spring 2026 (118 students). &nbsp;<a href="ECON_2106_Grading_Spring_2026_F2F.pdf" target="_blank">[Syllabus]</a> &nbsp;<a href="evaluation_spring2026.pdf" target="_blank">[Evaluations]</a></li>
+      <li>Fall 2025 (112 students). &nbsp;<a href="ECON_2106_Grading_Fall_2025_F2F.pdf" target="_blank">[Syllabus]</a> &nbsp;<a href="evaluation_fall.pdf" target="_blank">[Evaluations]</a></li>
     </ul>
   </div>
 
   <div class="list-label">Teaching Assistant — Georgia State University &amp; Allameh Tabataba'i University</div>
-
-  <div class="course">
-    <div class="course-meta" style="padding-left:0;">Public Economics &nbsp;·&nbsp; Principles of Microeconomics &nbsp;·&nbsp; Intermediate Microeconomics &nbsp;·&nbsp; 2022–2024</div>
-  </div>
+  <p style="font-size:0.93rem;font-weight:300;color:#444;margin-bottom:1.6rem;">
+    Public Economics &nbsp;·&nbsp; Principles of Microeconomics &nbsp;·&nbsp; Intermediate Microeconomics &nbsp;·&nbsp; 2022–2024
+  </p>
 
   <div class="list-label">Student Evaluations — ECON 2106</div>
 
@@ -82,18 +111,9 @@
     <p>"I would say that their teaching style has been and will continue to be excellent. I am satisfied, and I am taking away many valuable lessons. Keep doing what you are doing, it's great."</p>
   </div>
 
-  <!-- Thank you letter photo -->
-  <div style="margin-top:2.5rem;">
-    <img src="thankyouletter.jpg" alt="Thank you letter from ECON 2106 students, December 2025"
-         style="max-width:420px;width:100%;display:block;border:1px solid #eee;" />
-    <p style="font-family:'Lato',sans-serif;font-weight:300;font-size:0.78rem;color:#aaa;margin-top:0.4rem;">
-      Thank you letter from ECON 2106 students, Fall 2025
-    </p>
-  </div>
-
-  <div style="margin-top:1.8rem;">
+  <div style="margin-top:2rem;">
     <a href="Statement_of_Teaching_Interests_MahtaGhafarianghadim.pdf" target="_blank" class="btn">Teaching Statement</a>
-    <a href="Evidence_of_Teaching_Effectiveness_MahtaGhafarianghadim.pdf" target="_blank" class="btn">Teaching Evaluations</a>
+    <a href="Evidence_of_Teaching_Effectiveness_MahtaGhafarianghadim.pdf" target="_blank" class="btn">Teaching Effectiveness Summary</a>
   </div>
 </div>
 

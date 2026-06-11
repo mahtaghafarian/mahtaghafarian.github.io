@@ -8,6 +8,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .cv-embed-wrapper {
+      margin: 1.5rem 0 2rem;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+    .cv-embed-wrapper iframe {
+      width: 100%;
+      height: 900px;
+      display: block;
+      border: none;
+    }
+  </style>
 </head>
 <body>
 <nav>
@@ -21,29 +34,17 @@
   </ul>
 </nav>
 
+<div class="banner-wrapper">
+  <img src="cv-banner.jpg" alt="CV" class="page-banner" onerror="this.style.display='none'" />
+  <span class="banner-title">CV</span>
+</div>
+
 <div class="page">
-  <h1 class="page-title">Curriculum Vitae</h1>
+  <a href="CV_Mahta_Ghafarianghadim.pdf" target="_blank" class="btn" style="margin-bottom:1rem;display:inline-block;">Full PDF Version</a>
 
-  <div class="list-label">Education</div>
-  <div class="list-item">Ph.D. in Economics (Expected 2026), Georgia State University, Atlanta, GA<br>
-    <span style="font-size:0.85rem;color:#888;">Chair: Professor Garth Heutel &nbsp;·&nbsp; Committee: Professors Tchernis, Marton, Oliva</span>
+  <div class="cv-embed-wrapper">
+    <iframe src="CV_Mahta_Ghafarianghadim.pdf" title="Curriculum Vitae"></iframe>
   </div>
-  <div class="list-item">M.A. in Economics (2025), Georgia State University, Atlanta, GA</div>
-  <div class="list-item">M.A. in Energy Economics (2020), Allameh Tabataba'i University, Tehran, Iran</div>
-  <div class="list-item">B.A. in Theoretical Economics (2018), Allameh Tabataba'i University, Tehran, Iran</div>
-
-  <div class="list-label">Research Interests</div>
-  <p style="font-size:0.93rem;font-weight:300;color:#444;padding-left:1.2rem;margin-bottom:1rem;">
-    Environmental Economics · Health Economics · Policy Evaluation · Applied Microeconomics · Causal Inference
-  </p>
-
-  <div class="list-label">Skills</div>
-  <div class="list-item"><strong style="font-weight:400;">Econometric Methods:</strong> Instrumental Variables, Difference-in-Differences, Fixed Effects, Panel Data</div>
-  <div class="list-item"><strong style="font-weight:400;">Programming:</strong> Stata, Python (pandas, numpy), SAS, QGIS, Excel</div>
-  <div class="list-item"><strong style="font-weight:400;">Data:</strong> NCHS restricted mortality microdata, BRFSS, Medicaid claims, CAPS administrative data (Georgia DECAL), NASA satellite data</div>
-
-  <br>
-  <a href="CV_Mahta_Ghafarianghadim.pdf" target="_blank" class="btn">Download Full CV (PDF)</a>
 </div>
 
 <footer>&copy; 2026 Mahta Ghafarianghadim &nbsp;·&nbsp; Georgia State University</footer>
