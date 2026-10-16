@@ -34,7 +34,7 @@
       <span class="badge">JMP</span>
       <a href="JMP_MahtaGhafarianghadim.pdf" target="_blank" style="color:#2a6fb0;">Air Pollution and Cardiovascular Mortality: Evidence from Thermal Inversions in the U.S.</a>
     </div>
-    <div class="paper-meta">Working Paper</div>
+    <div class="paper-meta">Working Paper<span class="jmp-version"></span></div>
     <div class="paper-desc">
       Thermal inversions are increasingly used as an instrument to estimate the causal effect of air pollution on health, but studies build the inversion measure in different ways and rarely check how these choices affect the estimates. I build and compare thermal inversion instruments across construction choices, using U.S. county and month level data from 2010 to 2023 to study the effect of fine particulate matter (PM2.5) on cardiovascular mortality. I show that the common way of measuring thermal inversions misses about 30 percent of U.S. counties, mostly at higher elevations, while measuring temperature relative to the local ground covers every county. Using this measure, I find that a one-unit increase in PM2.5 raises cardiovascular mortality by 3.8 percent. Results are robust to a range of alternative specifications and pass placebo tests, and I find no evidence of mortality harvesting. Effects are larger among Black individuals than among White and Hispanic individuals, and larger among women, the elderly, low-income counties, and rural counties. These results suggest that PM2.5 has large cardiovascular mortality costs in the United States and that how the instrument is built matters for how these costs are estimated.
     </div>
@@ -89,5 +89,18 @@
 </div>
 
 <footer>&copy; 2026 Mahta Ghafarianghadim &nbsp;·&nbsp; Georgia State University</footer>
+
+<script>
+  fetch('jmp_version.txt', { cache: 'no-store' })
+    .then(function (r) { return r.ok ? r.text() : ''; })
+    .then(function (t) {
+      t = t.trim();
+      if (!t) return;
+      document.querySelectorAll('.jmp-version').forEach(function (el) {
+        el.textContent = ' \u00b7 Latest version: ' + t;
+      });
+    })
+    .catch(function () {});
+</script>
 </body>
 </html>
